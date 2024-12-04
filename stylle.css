@@ -11,7 +11,10 @@ border-radius: 5%;
 border: 5px solid #06FAFA;
 width: 800px;
 background-color: #FFFF;
-margin-left: 240px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 #sobremim {
     color:  darkblue;
@@ -25,10 +28,44 @@ margin-left: 240px;
 }
 #corpo {
     background-color:   #011724;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 #imagem {
 margin-top: 30px;
-margin-left: 250px;
+
 width: 300px;
 border-radius: 100%;
 }
+
+@media (max-width:1050px) {
+ #caixa {
+    width:90%;
+    }
+}
+@media (max-width:600px) {
+#titulo{
+    font-size: 30px;
+}
+#subtitulo{
+font-size: 20px;
+}
+}
+@media (max-width: 480px){
+#imagem{
+width: 50%;
+}
+#titulo {
+font-size: 20px;
+}
+#subtitulo{
+font-size: 15px;
+}
+#sobremim{
+    font-size: 20px;
+}
+.apresentacao{
+    font-size: 15px;
+}
+    }
